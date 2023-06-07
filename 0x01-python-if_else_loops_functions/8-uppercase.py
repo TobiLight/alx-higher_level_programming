@@ -1,4 +1,10 @@
 #!/usr/bin/python3
-def print_last_digit(number):
-    print("{}".format(abs(number) % 10), end="")
-    return "{}".format(abs(number) % 10)
+def uppercase(str):
+    uppercase_string = ""
+    for char in str:
+        if ord('a') <= ord(char) <= ord('z'):
+            uppercase_char = chr(ord(char) - ord('a') + ord('A'))
+        else:
+            uppercase_char = char
+        uppercase_string += uppercase_char
+    print(uppercase_string, end="")
