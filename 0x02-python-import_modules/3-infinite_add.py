@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     result = 0
     if len(argv) < 2:
-        print("{}".format(0))
+        result = 0
     else:
         for i in range(1, len(argv)):
             result += int(argv[i])
