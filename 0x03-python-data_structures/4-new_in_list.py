@@ -13,8 +13,8 @@ def new_in_list(my_list, idx, element):
         element: The new element to replace at the specified index.
 
     Returns:
-        list: A copy of the original list with the element 
-        replaced at the given index, or a copy of the original list 
+        list: A copy of the original list with the element
+        replaced at the given index, or a copy of the original list
         if the index is negative or out of range.
 
     Examples:
