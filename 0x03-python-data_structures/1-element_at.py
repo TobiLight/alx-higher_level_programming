@@ -14,9 +14,6 @@ def element_at(my_list, idx):
         Any: The element at the specified index, or None if idx
         is negative or out of range.
     """
-    if idx < 0:
+    if idx < 0 or idx > len(my_list):
         return None
-    if idx > len(my_list):
-        return None
-    
     return my_list[idx]
