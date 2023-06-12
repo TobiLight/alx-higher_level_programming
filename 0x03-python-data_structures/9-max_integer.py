@@ -15,8 +15,7 @@ def max_integer(my_list=[]):
         None if the list is empty.
     """
     max_num = my_list[0] if len(my_list) > 0 else None
-    for i in range(1,len(my_list)):
+    for i in range(1, len(my_list)):
         if max_num < my_list[i]:
             max_num = my_list[i]
     return max_num
-        
