@@ -5,7 +5,8 @@
 
 def multiple_returns(sentence):
     """
-    Returns a tuple with the length of a string and its first character.
+    Returns a tuple with the length of a string
+    and its first character.
 
     Args:
         sentence (str): The input sentence.
