@@ -17,6 +17,6 @@ def multiple_returns(sentence):
             - The first character of the sentence (str) or
               None if the sentence is empty.
     """
-    if len(sentence) == 0:
-        return len(sentence), None
-    return len(sentence), sentence[0]
+    sentence_len = len(sentence)
+    first_character = sentence[0] if sentence_len > 0 else None
+    return sentence_len, first_character
