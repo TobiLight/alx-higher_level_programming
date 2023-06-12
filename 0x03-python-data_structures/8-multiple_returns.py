@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # File: 8-multiple_returns.py
 # Author: Oluwatobiloba Light
 
