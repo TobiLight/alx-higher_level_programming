@@ -21,8 +21,7 @@ def print_matrix_integer(matrix=[[]]):
     """
     for row in range(len(matrix)):
         for num in range(len(matrix[row])):
-            if num == len(matrix[row]) - 1:
-                print("{}".format(matrix[row][num]), end="")
-                break
             print("{}".format(matrix[row][num]), end=" ")
+            if num != len(matrix[row]) - 1:
+                print("{}".format(matrix[row][num]), end="")
         print()
