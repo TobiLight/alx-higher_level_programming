@@ -19,9 +19,10 @@ def print_matrix_integer(matrix=[[]]):
     Returns:
         None
     """
-    counter1 = 0
-    counter2 = 0
-    for row in matrix:
-        for num in row:
-            print("{:d}".format(num), end=" ")
+    for row in range(len(matrix)):
+        for num in range(len(matrix[row])):
+            if num == len(matrix[row]) - 1:
+                print("{}".format(matrix[row][num]), end="")
+                break
+            print("{}".format(matrix[row][num]), end=" ")
         print()
