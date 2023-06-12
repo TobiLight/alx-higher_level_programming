@@ -18,5 +18,5 @@ def multiple_returns(sentence):
               None if the sentence is empty.
     """
     if len(sentence) == 0:
-        return (len(sentence), None)
-    return (len(sentence), sentence[0])
+        return len(sentence), None
+    return len(sentence), sentence[0]
