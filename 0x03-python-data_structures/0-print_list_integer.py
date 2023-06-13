@@ -7,4 +7,3 @@ def print_list_integer(mylist=[]):
     """Prints integers of a list"""
     for item in range(len(mylist)):
         print("{:d}".format(mylist[item]))
-
