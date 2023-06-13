@@ -7,15 +7,6 @@
 #include "stdlib.h"
 
 listint_t *reverse_list(listint_t **head);
-void popint(int *arr, int *size);
-
-/**
- * popint - Pops an item from an array
- * @arr: The array of items
- * @size: The size of the array
- *
- * Returns: Nothing
- */
 
 /**
  * reverse_list - Reverses a singly linked listint_t
