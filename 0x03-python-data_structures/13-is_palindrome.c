@@ -10,8 +10,8 @@ listint_t *reverse_list(listint_t **head);
 
 /**
  * reverse_list - Reverses a singly linked listint_t
- * @head:A double pointer to the begining of the node
- *       of the list
+ * @head: A double pointer to the begining of the node
+ *        of the list
  *
  * Returns: A pointer to the head of the reversed list
  */
