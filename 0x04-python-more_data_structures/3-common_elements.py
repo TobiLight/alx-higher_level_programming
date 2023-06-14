@@ -15,4 +15,4 @@ def common_elements(set_1, set_2):
         set: A new set containing the common elements
         present in both input sets.
     """
-    return [set(set_1) & set(set_2)]
+    return [unique for unique in set(set_1) & set(set_2)]
