@@ -18,10 +18,10 @@ def square_matrix_simple(matrix=[]):
                     the input matrix.
     """
     square_matrix = []
-    for i in range(3):
+    for i in range(len(matrix)):
         row_of_squares = []
-        for row in matrix:
-            print(row[i] * 2)
-            row_of_squares.append(row[i] ** 2)
+        for row in matrix[i]:
+            print(matrix[row] * matrix[row])
+            row_of_squares.append(matrix[row] * matrix[row])
         square_matrix.append(row_of_squares)
     return square_matrix_simple
