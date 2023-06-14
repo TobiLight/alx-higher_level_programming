@@ -17,10 +17,10 @@ def search_replace(my_list, search, replace):
         list: A new list with all occurrences of the
         search element replaced by the replace element.
     """
-    my_list_cpy = []
-    for i in range(len(my_list)):
-        if my_list[i] == search:
-            my_list_cpy.append(replace)
+    new_list = []
+    for item in my_list:
+        if item == search:
+            new_list.append(replace)
         else:
-            my_list_cpy.append(my_list[i])
-    return my_list_cpy
+            new_list.append(item)
+    return new_list
