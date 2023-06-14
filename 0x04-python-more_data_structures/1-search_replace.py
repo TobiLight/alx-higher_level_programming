@@ -19,7 +19,8 @@ def search_replace(my_list, search, replace):
     """
     my_list_cpy = []
     for i in range(len(my_list)):
-        my_list_cpy.append(my_list[i])
         if my_list[i] == search:
             my_list_cpy[i] = replace
+        else:
+            my_list_cpy.append(my_list[i])
     return my_list_cpy
