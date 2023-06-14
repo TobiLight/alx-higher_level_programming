@@ -12,6 +12,7 @@ def common_elements(set_1, set_2):
         set_2 (set): The second set.
 
     Returns:
-        set: A new set containing the common elements present in both input sets.
+        set: A new set containing the common elements
+        present in both input sets.
     """
-    return [set(set1) & set(set2)]
+    return [set(set_1) & set(set_2)]
