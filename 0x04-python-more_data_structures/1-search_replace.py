@@ -17,7 +17,9 @@ def search_replace(my_list, search, replace):
         list: A new list with all occurrences of the
         search element replaced by the replace element.
     """
+    my_list_cpy = []
     for i in range(len(my_list)):
+        my_list_cpy[i] = my_list[i]
         if my_list[i] == search:
-            my_list[i] = replace
-    return my_list
+            my_list_cpy[i] = replace
+    return my_list_cpy
