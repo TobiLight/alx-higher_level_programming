@@ -23,4 +23,4 @@ def square_matrix_simple(matrix=[]):
         for row in range(len(matrix[i])):
             row_of_squares.append(matrix[i][row] * matrix[i][row])
         square_matrix.append(row_of_squares)
-    return square_matrix_simple
+    return square_matrix
