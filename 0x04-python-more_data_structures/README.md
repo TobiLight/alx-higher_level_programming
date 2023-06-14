@@ -38,6 +38,9 @@ python filename.py
 * **[2-uniq_add.py](./2-uniq_add.py)** - Write a function that adds all unique integers in a list (only once for each integer).
     * Prototype: `def uniq_add(my_list=[]):`
     * You are not allowed to import any module
+* **[3-common_elements.py](./3-common_elements.py)** - Write a function that returns a set of common elements in two sets.
+    * Prototype: `def common_elements(set_1, set_2):`
+    * You are not allowed to import any module
 
 ## Author
 This project is authored by **Oluwatobiloba Light**. Feel free to reach out with any questions or suggestions. :)
