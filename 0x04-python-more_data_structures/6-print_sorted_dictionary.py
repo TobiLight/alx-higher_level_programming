@@ -14,5 +14,5 @@ def print_sorted_dictionary(a_dictionary):
     Returns:
         None
     """
-    print("key: val" for key, val in sorted(
+    print("{}: {}".format(key, val) for key, val in sorted(
         a_dictionary.items(), key=lambda el: el[0]))
