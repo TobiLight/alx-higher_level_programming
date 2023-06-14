@@ -9,7 +9,7 @@ The project includes several Python scripts, each focusing on a specific task or
 ## Requirements
 The Python scripts are written using Python 3. They may have dependencies on other modules or libraries, which are mentioned in each script's header comment.
 
-## Usage:
+## Usage
 To run any of the Python scripts, use the following command:
 ```
 python3 filename.py

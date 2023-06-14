@@ -4,4 +4,21 @@
 
 
 def square_matrix_simple(matrix=[]):
-    pass
+    """
+    Computes the square value of all integers in a matrix.
+
+    Args:
+        matrix (list[list]): A 2-dimensional array.
+
+    Returns:
+        list[list]: A new matrix with the same size as the input matrix.
+        Each value in the new matrix is the square of the corresponding value in the input matrix.
+    """
+    square_matrix = []
+    for i in range(3):
+        row_of_squares = []
+        for row in matix:
+            row_of_squares.append(row * 2)
+        square_matrix.append(row_of_Squares)
+    return square_matrix_simple
+    
