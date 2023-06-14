@@ -20,7 +20,7 @@ def square_matrix_simple(matrix=[]):
     square_matrix = []
     for i in range(len(matrix)):
         row_of_squares = []
-        for row in matrix[i]:
+        for row in range(len(matrix[i])):
             print(matrix[row] * matrix[row])
             row_of_squares.append(matrix[row] * matrix[row])
         square_matrix.append(row_of_squares)
