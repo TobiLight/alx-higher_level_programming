@@ -35,6 +35,9 @@ python filename.py
     * `search` is the element to replace in the list
     * `replace` is the new element
     * You are not allowed to import any module
+* **[2-uniq_add.py](./2-uniq_add.py)** - Write a function that adds all unique integers in a list (only once for each integer).
+    * Prototype: `def uniq_add(my_list=[]):`
+    * You are not allowed to import any module
 
 ## Author
 This project is authored by **Oluwatobiloba Light**. Feel free to reach out with any questions or suggestions. :)
