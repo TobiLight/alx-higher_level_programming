@@ -20,7 +20,7 @@ def search_replace(my_list, search, replace):
     my_list_cpy = []
     for i in range(len(my_list)):
         if my_list[i] == search:
-            my_list_cpy[i] = replace
+            my_list_cpy.append(replace)
         else:
             my_list_cpy.append(my_list[i])
     return my_list_cpy
