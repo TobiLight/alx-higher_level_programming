@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # File: 12-roman_to_int.py
-#Author: Oluwatobiloba Light
+# Author: Oluwatobiloba Light
 
 
 def roman_to_int(roman_string):
