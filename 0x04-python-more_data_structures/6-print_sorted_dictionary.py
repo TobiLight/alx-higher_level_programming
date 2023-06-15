@@ -14,6 +14,4 @@ def print_sorted_dictionary(a_dictionary):
     Returns:
         None
     """
-    sorted_keys = sorted(a_dictionary.items())
-    for key in sorted_keys:
-        print("{}: {}".format(key, a_dictionary[key]))
+    [print("{}: {}".format(k, a_dictionary[k])) for k in sorted(a_dictionary)]
