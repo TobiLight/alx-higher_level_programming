@@ -23,7 +23,7 @@ def best_score(a_dictionary):
     max_key = list(a_dictionary.keys())[0]
     max_score = a_dictionary[max_key]
     for k, v in a_dictionary.items():
-        if v > big:
-            big = v
-            ret = k
-    return (ret)
+        if v > max_score:
+            max_score = v
+            max_key = k
+    return max_key
