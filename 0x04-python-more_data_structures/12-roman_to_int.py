@@ -23,7 +23,7 @@ def roman_to_int(roman_string):
         - If the roman_string is not a string or None,
            the function returns 0.
     """
-    if (not isinstance(roman_string, str)) or roman_string == None:
+    if (not isinstance(roman_string, str)) or roman_string is None:
         return 0
     roman_num_dict = {
         'I': 1,
