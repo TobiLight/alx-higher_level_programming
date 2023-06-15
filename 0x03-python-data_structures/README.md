@@ -123,7 +123,23 @@ python filename.py
   * Return: `0` if it is not a palindrome, `1` if it is a palindrome
   * An empty list is considered a palindrome
 
+* **[100-print_python_list_info.c](./100-print_python_list_info.c)**
+  #### CPython is the reference implementation of the Python programming language. Written in C, CPython is the default and most widely used implementation of the language. Since we now know a bit of C, we can look at what is happening under the hood of Python. Let’s have fun with Python and C, and let’s look at what makes Python so easy to use.
+  * All your files will be interpreted/compiled on Ubuntu 14.04 LTS
+
+  ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/7e7834b535261d05532fb80a9304f7051c4ad7ac.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230615%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230615T110354Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=915fa45896ca1bb3d4748b932e2a968ab3fbea4b7fb433923b603b138344de8f)
+
+  #### Create a C function that prints some basic info about Python lists.
+  * Prototype: `void print_python_list_info(PyObject *p);`
+  * Format: see example
+  * Python version: 3.4
+  * Your shared library will be compiled with this command line: `gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,PyList -o libPyList.so -fPIC -I/usr/include/python3.4 100-print_python_list_info.c`
+  * OS: `Ubuntu 14.04 LTS`
+  * Start by reading:
+    * listobject.h
+    * object.h
+    * [Common Object Structures](https://intranet.alxswe.com/rltoken/jmRTk4m1VSzjsu3QTGaC6w)
+    * [List Objects](https://intranet.alxswe.com/rltoken/7V1HlQRESjCqrKrw_O_Urw)
 
 ## Author
-
 This project is authored by **Oluwatobiloba Light**. Feel free to reach out with any questions or suggestions. :)
