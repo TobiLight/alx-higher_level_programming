@@ -16,14 +16,14 @@ def best_score(a_dictionary):
         str or None: The key with the biggest integer value.
         If no score is found, returns None.
     """
-    biggest_score = None
-    biggest_key = None
+    if not isinstance(a_dictionary, dict) or\
+        len(a_dictionary) == 0:
+        return None
 
-    for key, value in a_dictionary.items():
-        if isinstance(value, int):
-            if biggest_score is None or value >
-            biggest_score:
-                biggest_score = value
-                biggest_key = key
-
-    return biggest_key
+    max_key = list(a_dictionary.keys())[0]
+    max_score = a_dictionary[max_key]
+    for k, v in a_dictionary.items():
+        if v > big:
+            big = v
+            ret = k
+    return (ret)
