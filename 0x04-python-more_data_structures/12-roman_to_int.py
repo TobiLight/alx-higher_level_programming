@@ -38,10 +38,9 @@ def roman_to_int(roman_string):
     for i in range(len(roman_string)):
         if roman_num_dict.get(roman_string[i], 0) == 0:
             return 0
-        if i != len(roman_string) - 1 and
-           roman_num_dict[roman_string[i]] < roman_num_dict[roman_string[i + 1]]:
-            roman_num += roman_num_dict[roman_string[i]]
-            * -1
+        if i != len(roman_string) - 1 and roman_num_dict[roman_string[i]]
+           < roman_num_dict[roman_string[i + 1]]:
+            roman_num += roman_num_dict[roman_string[i]] * -1
         else:
             roman_num += roman_num_dict[roman_string[i]]
 
