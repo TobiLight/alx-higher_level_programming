@@ -8,7 +8,8 @@ def weight_average(my_list=[]):
     Calculate the weighted average of a list of integer tuples.
 
     Args:
-        my_list (list): A list of integer tuples in the format (<score>, <weight>).
+        my_list (list): A list of integer tuples
+        in the format (<score>, <weight>).
 
     Returns:
         float: The weighted average of the scores in the list.
