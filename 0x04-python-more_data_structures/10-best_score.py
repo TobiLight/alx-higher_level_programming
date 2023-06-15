@@ -17,8 +17,8 @@ def best_score(a_dictionary):
         If no score is found, returns None.
     """
     if not isinstance(a_dictionary, dict) or\
-        len(a_dictionary) == 0:
-            return None
+    len(a_dictionary) == 0:
+        return None
 
     max_key = list(a_dictionary.keys())[0]
     max_score = a_dictionary[max_key]
