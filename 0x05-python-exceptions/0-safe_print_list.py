@@ -23,7 +23,8 @@ def safe_print_list(my_list=[], x=0):
             [print(my_list[elements], end="")
             for elements in range(0, length_of_list)]
         else:
-            [print(my_list[elements], end="") for elements in range(0, x)]
+            [print(my_list[elements], end="") for elements
+             in range(0, x)]
         print()
         return length_of_list if x <= 0 or x > length_of_list else x 
     except:
