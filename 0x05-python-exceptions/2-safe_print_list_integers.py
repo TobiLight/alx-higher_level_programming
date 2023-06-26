@@ -18,7 +18,7 @@ def safe_print_list_integers(my_list=[], x=0):
 
     for index in range(x):
         try:
-            if isinstance(my_list[index], int):
+            if type(my_list[index]) == int:
                 print("{:d}".format(my_list[index]), end="")
                 num_of_integers_printed += 1
         except IndexError:
