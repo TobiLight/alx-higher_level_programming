@@ -17,15 +17,10 @@ def safe_print_list(my_list=[], x=0):
         int: The actual number of elements printed.
     """
     length_of_list = 0
-    try:
-        [length_of_list := length_of_list + 1 for _ in my_list]
-        if x <= 0 or x > length_of_list:
-            [print((my_list[elements]), end="")
-            for elements in range(0, length_of_list)]
-        else:
-            [print(my_list[elements], end="") for elements
-             in range(0, x)]
-        print("")
-        return length_of_list if x <= 0 or x > length_of_list else x 
-    except:
-        print("An unknown error has occured!")
+    for element in range(x):
+        try:
+            print("{:d}".format(element,), end="")
+            length_of_list += 1
+        except IndexError:
+            break
+    return length_of_list

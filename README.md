@@ -7,3 +7,4 @@ This project introduces beginner concepts to Python.
 * **[0x02-python-import_modules](./0x02-python-import_modules)** - Import modules
 * **[0x03-python-data_structures](./0x03-python-data_structures)** - Data structures
 * **[0x04-python-more_data_structures](./0x04-python-more_data_structures)** - More Data Structures
+* **[0x05-python-exceptions](./0x05-python-exceptions/)** - Exceptions
