@@ -22,7 +22,7 @@ def list_division(my_list_1, my_list_2, list_length):
         for index in range(list_length):
             try:
                 if type(my_list_1[index]) == int or\
-                    type(my_list_2[index] == int):
+                        type(my_list_2[index] == int):
                     new_list.append(my_list_1[index] / my_list_2[index])
             except TypeError:
                 new_list.append(0)
