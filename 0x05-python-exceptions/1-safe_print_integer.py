@@ -10,7 +10,8 @@ def safe_print_integer(value):
     Args:
         value (any): can be any type (integer, string, etc.)
 
-    Returns: True if value has been correctly printed
+    Returns:
+        boolean: True if value has been correctly printed
              (it means the value is an integer)
     """
     correctly_printed = False
