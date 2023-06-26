@@ -5,7 +5,7 @@
 
 def raise_exception():
     """
-    Raises a type exception.add()
+    Raises a type exception
 
     Raises:
         TypeError
