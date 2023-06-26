@@ -23,4 +23,5 @@ def safe_print_list(my_list=[], x=0):
             length_of_list += 1
         except IndexError:
             break
+    print()
     return length_of_list
