@@ -19,7 +19,7 @@ def safe_print_list(my_list=[], x=0):
     length_of_list = 0
     for element in range(x):
         try:
-            print("{:d}".format(element,), end="")
+            print("{:d}".format(element), end="")
             length_of_list += 1
         except IndexError:
             break
