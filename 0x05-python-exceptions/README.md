@@ -24,6 +24,11 @@ The repository covers the following topics:
 7. The `finally` block
 8. Exception handling best practices
 
+## Requirements
+Ensure that you have Python installed on your system. You can download the latest version of Python from the official Python website: 
+```https://www.python.org/downloads/```
+Code Editor or IDE: Choose a code editor or Integrated Development Environment (IDE) for writing and running your Python code. Some popular choices include Vim, Emacs, Visual Studio Code, PyCharm, Atom, Sublime Text, or Jupyter Notebook.
+
 ## Getting Started
 To get started with the exercises and examples in this repository, follow these steps:
 1. Clone the repository to your local machine:
@@ -39,10 +44,17 @@ To get started with the exercises and examples in this repository, follow these 
 4. Open the files in your preferred Python editor or IDE.
 5. Follow the instructions provided in each file to complete the exercises and learn about exception handling in Python.
 
-## Requirements
-Ensure that you have Python installed on your system. You can download the latest version of Python from the official Python website: 
-```https://www.python.org/downloads/```
-Code Editor or IDE: Choose a code editor or Integrated Development Environment (IDE) for writing and running your Python code. Some popular choices include Vim, Emacs, Visual Studio Code, PyCharm, Atom, Sublime Text, or Jupyter Notebook.
+## Task & Files
+Write a function that prints `x` elements of a list.
+   * Prototype: `def safe_print_list(my_list=[], x=0):`
+   * `my_list` can contain any type (integer, string, etc.)
+   * All elements must be printed on the same line followed by a new line.
+   * `x` represents the number of elements to print
+   * `x` can be bigger than the length of my_list
+   * Returns the real number of elements printed
+   * You have to use `try: / except:`
+   * You are not allowed to import any module
+   * You are not allowed to use `len()`
 
 ## Contributing
 Contributions to this repository are welcome! If you have any suggestions, improvements, or additional exercises related to exception handling in Python, please feel free to submit a pull request.
