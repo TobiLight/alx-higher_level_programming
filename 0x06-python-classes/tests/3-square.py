@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# File: 2-square.py
+# File: 3-square.py
 # Author: Oluwatobiloba Light
 """Define a class Square."""
 
@@ -16,3 +16,6 @@ class Square:
             raise ValueError('size must be >= 0')
         else:
             self.__size = size
+
+    def area(self):
+        return self.__size * self.__size

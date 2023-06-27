@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# File: 0-square.py
+# File: 1-square.py
 # Author: Oluwatobiloba Light
 """Define a class Square."""
 
