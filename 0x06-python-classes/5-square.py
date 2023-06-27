@@ -77,9 +77,9 @@ class Square:
         If size is equal to 0, an empty line is printed.
         """
         if self.__size == 0:
-            print("")
-            return
-        for i in range(self.__size):
-            for j in range(self.__size):
-                print("#", end="")
-            print("#")
+            print()
+        else:
+            for i in range(self.__size):
+                for j in range(self.__size):
+                    print("#", end="")
+                print("#")
