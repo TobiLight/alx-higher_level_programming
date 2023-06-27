@@ -18,11 +18,8 @@ def safe_print_integer_err(value):
     """
     is_integer = False
     try:
-        if isinstance(abs(value), int):
-            print("{:d}".format(value))
-            is_integer = True
-        else:
-            is_integer = False
-    except:
-        pass
-    return is_integer
+        print("{:d}".format(value))
+        return True
+    except Exception as e:
+        print("Exception: {}".format(str(e)))
+        return False
