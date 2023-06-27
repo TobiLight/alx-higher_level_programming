@@ -6,6 +6,6 @@
 
 class Square:
     """
-    Represents a square
+    Class that reoresents a square.
     """
     pass
