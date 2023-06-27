@@ -11,8 +11,10 @@ def safe_print_integer_err(value):
         value (any): can be any type (integer, string, etc.)
 
     Returns:
-        - True if value has been correctly printed (it means the value is an integer)
-        - Otherwise False and prints in stderr the error precede by Exception:
+        - True if value has been correctly printed (it means
+          the value is an integer)
+        - Otherwise False and prints in stderr the error precede
+          by Exception:
     """
     is_integer = False
     try:
