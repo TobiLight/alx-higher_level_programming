@@ -33,8 +33,8 @@ class Node:
             next_node (Node): The next node in the linked list
                               (default is None).
         """
-        self.__data = data
-        self.__next_node = next_node
+        self.data = data
+        self.next_node = next_node
 
     @property
     def data(self):
