@@ -89,7 +89,6 @@ class Node:
             self.__next_node = value
 
 
-
 class SinglyLinkedList:
     """
     Represents a singly linked list.
