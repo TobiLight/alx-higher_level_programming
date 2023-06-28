@@ -130,5 +130,5 @@ class Square:
             for i in range(0, self.__size - 1):
                 square_str += ' ' * \
                     self.__position[0] + '#' * self.__size + '\n'
-            sqr_str += ' ' * self.__position[0] + '#' * self.__size
-        return sqr_str
+            square_str += ' ' * self.__position[0] + '#' * self.__size
+        return square_str
