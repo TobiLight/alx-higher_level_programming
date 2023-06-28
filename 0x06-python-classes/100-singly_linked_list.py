@@ -89,6 +89,7 @@ class Node:
             self.__next_node = value
 
 
+
 class SinglyLinkedList:
     """
     Represents a singly linked list.
@@ -141,7 +142,7 @@ class SinglyLinkedList:
         """
         current = self.__head
         result = []
-        while current.next_node is not None:
+        while current is not None:
             result.append(str(current.data))
             current = current.next_node
         return "\n".join(result)
