@@ -127,12 +127,8 @@ class Square:
         else:
             for x in range(0, self.__position[1]):
                 square_str += "\n"
-            for i in range(0, self.__size):
-                for y in range(0, self.__position[0]):
-                    square_str += " " * self.__position[0] + '#' * self.__size\
-                        + '\n'
-                for j in range(0, self.__size):
-                    square_str += ' ' * self.__position[0] + '#' * self.__size
-                if i != self.__size - 1:
-                    return square_str
-        return ("")
+            for i in range(0, self.__size - 1):
+                square_str += ' ' * \
+                    self.__position[0] + '#' * self.__size + '\n'
+            sqr_str += ' ' * self.__position[0] + '#' * self.__size
+        return sqr_str
