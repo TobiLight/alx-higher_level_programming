@@ -104,7 +104,7 @@ class Rectangle:
     def perimeter(self):
         """
         Calculates the perimeter of a rectangle.add()
-        
+
         Returns:
             int: The perimeter of a rectangle
         """
