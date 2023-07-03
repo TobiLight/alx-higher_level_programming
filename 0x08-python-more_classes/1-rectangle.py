@@ -7,21 +7,22 @@
 class Rectangle:
     """
     Represents a Rectangle
-    
+
     Attributes:
         __width (int): The width of the rectangle
         __height (int): The height of the rectangle
-    
+
     Methods:
         width(property): Retrieves the width of a rectangle
         width(setter): Sets the width of a rectangle
         height (property): Retrieve the height of the rectangle.
         height (setter): Set the height of the rectangle.
-        
+
     Raises:
         TypeError: If the width or height is not an integer.
         ValueError: If the width or height is less than 0.
     """
+
     def __init__(self, width=0, height=0):
         """
         Initializes a rectangle instance with an optional width and height
@@ -30,9 +31,9 @@ class Rectangle:
             width (int, optional): Width of a rectangle. Defaults to 0.
             height (int, optional): Height of a rectangle. Defaults to 0.
         """
-        self.__width = width
-        self.__height = height
-    
+        self.width = width
+        self.height = height
+
     @property
     def width(self):
         """
@@ -42,7 +43,7 @@ class Rectangle:
             int: The width of a rectangle
         """
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """
@@ -60,7 +61,7 @@ class Rectangle:
         if value < 0:
             raise ValueError('width must be >= 0')
         self.__width = value
-        
+
     @property
     def height(self):
         """
@@ -70,7 +71,7 @@ class Rectangle:
             int: The height of a rectangle
         """
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """
