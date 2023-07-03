@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# File: 4-rectangle.py
+# File: 5-rectangle.py
 # #Author: Oluwatobiloba Light
 """Defines a Rectangle."""
 
