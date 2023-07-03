@@ -99,7 +99,7 @@ class Rectangle:
         Returns:
             int: The area of a rectangle
         """
-        return self.width * self.height
+        return self.__width * self.__height
 
     def perimeter(self):
         """
@@ -108,14 +108,20 @@ class Rectangle:
         Returns:
             int: The perimeter of a rectangle
         """
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
-        return 2 * (self.width + self.height)
+        return 2 * (self.__width + self.__height)
 
     def __str__(self):
         """
         Prints the rectangle with the '#' character
         """
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ''
-        return ('#' * self.width + '\n') * self.height
+        result = []
+        for x in range(self.__height):
+            for y in range(self.__width):
+                result.append("#")
+            if x != self.__height - 1:
+                result.append("\n")
+        return "".join(result)
