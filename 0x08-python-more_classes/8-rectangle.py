@@ -141,7 +141,7 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
-        
+
     def __str__(self):
         """
         Returns the string representatio of a rectangle.
