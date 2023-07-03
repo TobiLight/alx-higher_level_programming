@@ -19,6 +19,7 @@ class Rectangle:
         height (setter): Set the height of the rectangle.
         area(): Returns the area of a rectangle.
         perimeter(): Returns the perimeter of a rectangle.
+        __str__(): Returns the string representatio of a rectangle.
 
     Raises:
         TypeError: If the width or height is not an integer.
