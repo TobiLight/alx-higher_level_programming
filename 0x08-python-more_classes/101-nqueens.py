@@ -16,7 +16,7 @@ Attributes:
     board (list): A list of lists representing the chessboard.
     solutions (list): A list of lists containing solutions.
 
-Solutions are represented and printed in the format [[r, c], [r, c], [r, c], 
+Solutions are represented and printed in the format [[r, c], [r, c], [r, c],
 [r, c]]
 where `r` and `c` represent the row and column, respectively, where a
 queen must be placed on the chessboard.
