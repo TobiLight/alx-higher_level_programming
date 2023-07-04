@@ -15,5 +15,4 @@ def copy_list(l):
         A new list with the same elements as the original list.
 
     """
-    new_list = l[:]
-    return new_list
+    return l.copy()
