@@ -23,7 +23,7 @@ queen must be placed on the chessboard.
 import sys
 
 
-def is_safe(board, row, col, N):
+def is_safe(board, row, col):
     """
     Checks if placing a queen at board[row][col] is safe
 
@@ -31,7 +31,6 @@ def is_safe(board, row, col, N):
         board (list[int]): List representation of a chessboard
         row (int): Row of a chessboard
         col (int): Column of a chessboard
-        N (int): Size of the chessboard
 
     Returns:
         bool: True if it is safe else false
@@ -43,37 +42,35 @@ def is_safe(board, row, col, N):
     return True
 
 
-def place_queen(board, row, N):
+def place_queen(board, row):
     """
     Place a queen on the board
 
     Args:
         board (list[int]): List representation of a chessboard
         row (int): Row of a chessboard
-        N (int): Size of the chessboard
     """
-    if row == N:
-        print_solution(board, N)
+    if row == len(board):
+        print_solution(board)
         return
 
-    for col in range(N):
-        if is_safe(board, row, col, N):
+    for col in range(len(board)):
+        if is_safe(board, row, col):
             board[row] = col
-            place_queen(board, row+1, N)
+            place_queen(board, row+1)
             board[row] = -1
 
 
-def print_solution(board, N):
+def print_solution(board):
     """
     Prints all the possible solution to the problem
 
     Args:
         board (list[int]): List representation of a chessboard
-        N (int): Size of the chessboard
     """
     result = []
-    for row in range(N):
-        for col in range(N):
+    for row in range(len(board)):
+        for col in range(len(board)):
             if board[row] == col:
                 result.append([row, col])
     print(result)
@@ -94,4 +91,4 @@ if __name__ == "__main__":
         print("N must be at least 4")
         sys.exit(1)
     board = [-1] * N
-    place_queen(board, 0, N)
+    place_queen(board, 0)
