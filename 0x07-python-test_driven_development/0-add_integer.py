@@ -1,18 +1,15 @@
 #!/usr/bin/python3
 # File: 0-add_integer.py
 # Author: Oluwatobiloba Light
+"""Defines an integer addition function.
+This function takes two arguments, `a` and `b`, and performs the addition
+operation on them. If `a` is not provided, it defaults to 98. It raises a
+TypeError If either `a` or `b` is not an integer.
+"""
 
 
 def add_integer(a, b=98):
-    """
-    Adds two integers.
-
-    Args:
-        a (int or float): First number to be added.
-        b (int or float, optional): Second number to be added. Defaults to 98.
-
-    Returns:
-        int: The sum of a and b, casted as an integer.
+    """Returns the sum of a and b as an integer.
 
     Raises:
         TypeError: If a or b is not an integer or float.
