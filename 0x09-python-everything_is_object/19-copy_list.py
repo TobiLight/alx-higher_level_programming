@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # File: 19-copy_list.py
-# #Author: Oluwatobiloba Light
+# Author: Oluwatobiloba Light
 """Returns copy of a list"""
 
 
