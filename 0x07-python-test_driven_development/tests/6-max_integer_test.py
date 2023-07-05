@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-# File: 6-max_integer_test.py
-# Author: Oluwatobiloba Light
 """Unittests for max_integer([..])."""
-
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
@@ -48,7 +45,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_string(self):
         """Test a string."""
         string = "Oluwatobiloba"
-        self.assertEqual(max_integer(string), 'z')
+        self.assertEqual(max_integer(string), 'w')
 
     def test_list_of_strings(self):
         """Test a list of strings."""
