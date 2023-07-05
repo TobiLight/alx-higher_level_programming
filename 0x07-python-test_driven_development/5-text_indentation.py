@@ -23,26 +23,10 @@ def text_indentation(text):
     while i < len(text):
         print(text[i], end="")
         if text[i] in '.?:' or text[i] == '\n':
-            print('\n')
-            # if text[i] in '.?:':
-            #     print('\n')
+            if text[i] in '.?:':
+                print('\n')
             i += 1
             while i < len(text) and text[i] == " ":
                 i += 1
             continue
         i += 1
-    # while i < len(text):
-    #     string += text[i]
-    #     if text[i] in ['.', '?', ':']:
-    #         string = string.strip()
-    #         print(string + '\n')
-    #         try:
-    #             if text[i + 1] == ' ':
-    #                 i += 1
-    #         except IndexError:
-    #             pass
-    #         string = ''
-    #     i += 1
-
-    # if len(string) > 0:
-    #     print(string, end="")
