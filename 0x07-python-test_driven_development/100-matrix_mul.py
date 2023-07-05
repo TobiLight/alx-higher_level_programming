@@ -28,8 +28,7 @@ def matrix_mul(m_a, m_b):
         raise TypeError("m_a must be a list")
     if not isinstance(m_b, list):
         raise TypeError("m_b must be a list")
-    
-    
+
     if not all(isinstance(row, list) for row in m_a):
         raise TypeError("m_a must be a list of lists")
     if not all(isinstance(row, list) for row in m_b):
@@ -54,12 +53,20 @@ def matrix_mul(m_a, m_b):
 
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
-
-    result = [[0 for _ in range(len(m_b[0]))] for _ in range(len(m_a))]
-
-    for i in range(len(m_a)):
-        for j in range(len(m_b[0])):
-            for k in range(len(m_b)):
-                result[i][j] += m_a[i][k] * m_b[k][j]
-
+    matrix1 = []
+    for x in range(len(m_b[0])):
+        new_row = []
+        for j in range(len(m_b)):
+            new_row.append(m_b[j][x])
+        matrix1.append(new_row)
+    
+    result = []
+    for row in m_a:
+        matrix2 = []
+        for col in matrix1:
+            product = 0
+            for i in range(len(matrix1[0])):
+                product += row[i] * col[i]
+            matrix2.append(product)
+        result.append(matrix2)
     return result
