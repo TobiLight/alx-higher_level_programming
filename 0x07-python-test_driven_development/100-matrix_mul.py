@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-# File: 101-matrix_mul.py
-# Author: Oluwatobiloba Light
 """Multiply two matrices"""
 
 
