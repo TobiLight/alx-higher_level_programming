@@ -59,7 +59,7 @@ def matrix_mul(m_a, m_b):
         for j in range(len(m_b)):
             new_row.append(m_b[j][x])
         matrix1.append(new_row)
-    
+
     result = []
     for row in m_a:
         matrix2 = []
@@ -69,4 +69,5 @@ def matrix_mul(m_a, m_b):
                 product += row[i] * col[i]
             matrix2.append(product)
         result.append(matrix2)
+
     return result
