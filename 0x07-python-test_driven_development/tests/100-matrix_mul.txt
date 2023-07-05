@@ -25,7 +25,7 @@ Usage
     >>> print(matrix_mul(m_a, m_b))
     [[13, 16]]
 
-    The function also works with floating-point numbers.
+The function also works with floating-point numbers.
 
 ::
 
