@@ -20,7 +20,8 @@ class Rectangle:
         area(): Returns the area of a rectangle.
         perimeter(): Returns the perimeter of a rectangle.
         __str__(): Returns the string representatio of a rectangle.
-        __repr__(): Returns a string representation of the rectangle for debugging.
+        __repr__(): Returns a string representation of the rectangle
+                    for debugging.
         __del()__: Deletes an instance of a class Rectangle.
 
     Raises:
