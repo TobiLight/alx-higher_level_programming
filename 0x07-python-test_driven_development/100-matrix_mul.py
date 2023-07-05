@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# Author: Oluwatobiloba Light
 """Multiply two matrices"""
 
 
@@ -51,6 +52,7 @@ def matrix_mul(m_a, m_b):
 
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
+    
     matrix1 = []
     for x in range(len(m_b[0])):
         new_row = []
