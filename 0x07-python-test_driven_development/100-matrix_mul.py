@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Author: Oluwatobiloba Light
 """Multiply two matrices"""
 
 
