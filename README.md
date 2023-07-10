@@ -11,3 +11,4 @@ This project introduces beginner concepts to Python.
 * **[0x06-python-classes](./0x06-python-classes)** - Classes and Objects
 * **[0x07-python-test_driven_development](./0x07-python-test_driven_development)**
   - Test-Driven Development
+* **[0x0A-python_inheritance](./0x0A-python_inheritance)** -Inheritance
