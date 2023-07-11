@@ -51,4 +51,5 @@ class Rectangle(BaseGeometry):
             str: The rectangle description in the format
                  '[Rectangle] <width>/<height>'.
         """
-        return "[{}] {}/{}".format(type(self).__name__, self.__width, self.__height)
+        return "[{}] {}/{}".format(type(self).__name__,
+                                   self.__width, self.__height)
