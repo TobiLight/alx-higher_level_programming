@@ -6,8 +6,8 @@
 
 def add_attribute(obj, attr_name, attr_value):
     """
-    Adds a new attribute to an object if it's possible. Raises a 
-    TypeError exception with the message "can't add new attribute" if the 
+    Adds a new attribute to an object if it's possible. Raises a
+    TypeError exception with the message "can't add new attribute" if the
     object can't have a new attribute.
 
     Args:
