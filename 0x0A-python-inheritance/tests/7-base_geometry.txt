@@ -32,7 +32,7 @@ in a TypeError.
 
     >>> bg = BaseGeometry(None)
     Traceback (most recent call last):
-    TypeError: object() takes no arguments
+    TypeError: BaseGeometry() takes no arguments
 
 Methods
 =======
