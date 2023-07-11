@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+# File: 101-add_attribute.py
+# Author: Oluwatobiloba Light
+"""Defines a function that adds attributes to objects."""
+
+
 def add_attribute(obj, attr_name, attr_value):
     """
     Adds a new attribute to an object if it's possible. Raises a 
