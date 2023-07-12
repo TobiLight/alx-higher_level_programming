@@ -46,6 +46,7 @@ class Student:
         for k, v in json.items():
             setattr(self, k, v)
 
+
 if __name__ == "__main__":
     import sys
     import os
