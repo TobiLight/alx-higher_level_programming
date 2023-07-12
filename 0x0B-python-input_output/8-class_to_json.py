@@ -24,7 +24,7 @@ if __name__ == "__main__":
     print(type(mj))
     print(mj)
     print("==========")
-    m2 = MyClass("John")
+    m2 = MyClass2("John")
     m2.win()
     print(type(m2))
     print(m2)
