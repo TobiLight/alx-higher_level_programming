@@ -11,6 +11,10 @@ def read_file(filename=''):
     Args:
         filename (str, optional): Name of the file. Defaults to ''.
     """
+    
     with open(filename, encoding="utf-8") as my_file:
-        lines = my_file.read()
-        print(lines)
+        print(my_file.read(), end='')
+
+
+if __name__ == "__main__":
+    read_file("txt/my_file_0.txt")
