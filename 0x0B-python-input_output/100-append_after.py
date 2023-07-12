@@ -24,4 +24,4 @@ def append_after(filename="", search_string="", new_string=""):
 
 
 if __name__ == "__main__":
-    append_after("append_after_100.txt", "Python", "\"C is fun!\"\n")
+    append_after("txt/append_after_100.txt", "Python", "\"C is fun!\"\n")
