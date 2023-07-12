@@ -8,7 +8,16 @@ def class_to_json(obj):
     """
     Returns the dictionary represntation of a simple data structure.
     """
-    return obj.__dict__
+    if hasattr(obj, '__dict__'):
+        result = {}
+        for key, value in obj.__dict__.items():
+            if isinstance(value, (list, dict, str, int, bool)):
+                result[key] = value
+            else:
+                result[key] = class_to_json(value)
+        return result
+    else:
+        return obj
 
 
 if __name__ == "__main__":
