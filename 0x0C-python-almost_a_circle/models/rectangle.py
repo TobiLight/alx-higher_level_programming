@@ -222,6 +222,12 @@ class Rectangle(Base):
         }
 
     def __str__(self):
+        """
+        String representation of the class
+
+        Returns:
+            str: String JSON representation of the class
+        """
         return "".join("[{}] ({}) {}/{} - {}/{}"
                        .format(type(self).__name__, self.id, self.__x,
                                self.__y, self.__width, self.__height))
