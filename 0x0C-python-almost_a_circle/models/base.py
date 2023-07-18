@@ -160,13 +160,13 @@ class Base():
                 else:
                     fieldnames = ['id', 'size', 'x', 'y']
                 list_dicts = csv.DictReader(csvfile, fieldnames)
-                l = []
+                l_dicts = []
                 for l_dict in list_dicts:
                     new_dict = {}
                     for k, v in l_dict.items():
                         new_dict[k] = int(v)
-                    l.append(new_dict)
-                return [cls.create(**d) for d in l]
+                    l_dicts.append(new_dict)
+                return [cls.create(**d) for d in l_dicts]
         except IOError:
             return []
 
