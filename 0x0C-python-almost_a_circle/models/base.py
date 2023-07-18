@@ -45,6 +45,9 @@ class Base():
         """
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
+        if (type(list_dictionaries) != list or not
+                all(type(i) == dict for i in list_dictionaries)):
+            raise TypeError("list_dictionaries must be a list of dictionaries")
         return json.dumps(list_dictionaries)
 
     @staticmethod
@@ -63,8 +66,10 @@ class Base():
         is None or empty, an empty list is returned. Otherwise,
         the JSON string is converted to a list and returned.
         """
-        if json_string is None or len(json_string) == 0:
+        if json_string is None or len(json_string) == 0 or json_string == '':
             return []
+        if type(json_string) != str:
+                raise TypeError("json_string must be a string")
         return json.loads(json_string)
 
     @classmethod
@@ -85,9 +90,14 @@ class Base():
         an instance of the class with attributes set based on the key-value
         pairs in the dictionary.
         """
-        dummy_instance = cls(8, 8)
+        if cls.__name__ == 'Rectangle':
+            dummy_instance = cls(1, 1)
+        elif cls.__name__ == 'Square':
+            dummy_instance = cls(1)
+
         dummy_instance.update(**dictionary)
         return dummy_instance
+
 
     @classmethod
     def save_to_file(cls, list_objs):
