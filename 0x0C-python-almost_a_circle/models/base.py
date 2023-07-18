@@ -103,7 +103,8 @@ class Base():
         None, an empty list is saved. The file is overwritten if it already
         exists.
         """
-        with open("{}.json".format(cls.__name__), 'w', encoding="utf-8") as file:
+        with open("{}.json".format(cls.__name__), 'w', encoding="utf-8")\
+                as file:
             if list_objs is None:
                 file.write("[]")
             else:
@@ -127,9 +128,11 @@ class Base():
         of an instance.
         """
         try:
-            with open("{}.json".format(cls.__name__), 'r', encoding="utf-8") as file:
+            with open("{}.json".format(cls.__name__), 'r', encoding="utf-8")\
+                as file:
                 json_file = file.read()
-                return [cls.create(**item) for item in Base.from_json_string(json_file)]
+                return [cls.create(**item) for item in\
+                    Base.from_json_string(json_file)]
         except FileNotFoundError:
             return []
 
@@ -150,7 +153,8 @@ class Base():
     @classmethod
     def load_from_file_csv(cls):
         try:
-            with open("{}.csv".format(cls.__name__), "r", newline="") as csvfile:
+            with open("{}.csv".format(cls.__name__), "r", newline="")\
+                as csvfile:
                 if cls.__name__ == "Rectangle":
                     fieldnames = ['id', 'width', 'height', 'x', 'y']
                 else:

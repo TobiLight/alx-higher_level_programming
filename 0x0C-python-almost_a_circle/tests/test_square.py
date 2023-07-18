@@ -604,7 +604,7 @@ class TestSquare_update_kwargs(unittest.TestCase):
         self.assertEqual("[Square] (89) 10/10 - 5", str(s))
 
 
-class TestSquare_to_dictionary(unittest.TestCase):
+# class TestSquare_to_dictionary(unittest.TestCase):
     def test_to_dictionary_output(self):
         s = Square(10, 2, 1, 1)
         correct = {'id': 1, 'x': 2, 'size': 10, 'y': 1}

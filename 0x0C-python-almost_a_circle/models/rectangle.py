@@ -15,7 +15,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Initialize 
+        Initialize a Rectangle
 
         Args:
             width (int): Width of the rectangle
@@ -219,5 +219,6 @@ class Rectangle(Base):
         }
 
     def __str__(self):
-        return "".join("[{}] ({}) {}/{} - {}/{}".format(type(self).__name__,
-                                                        self.id, self.__x, self.__y, self.__width, self.__height))
+        return "".join("[{}] ({}) {}/{} - {}/{}"
+                       .format(type(self).__name__, self.id, self.__x,
+                               self.__y, self.__width, self.__height))
