@@ -69,7 +69,7 @@ class Base():
         if json_string is None or len(json_string) == 0 or json_string == '':
             return []
         if type(json_string) != str:
-                raise TypeError("json_string must be a string")
+            raise TypeError("json_string must be a string")
         return json.loads(json_string)
 
     @classmethod
@@ -97,7 +97,6 @@ class Base():
 
         dummy_instance.update(**dictionary)
         return dummy_instance
-
 
     @classmethod
     def save_to_file(cls, list_objs):
