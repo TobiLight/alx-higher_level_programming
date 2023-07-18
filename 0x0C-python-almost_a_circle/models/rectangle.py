@@ -196,15 +196,14 @@ class Rectangle(Base):
             for i in range(len(args)):
                 if i == 0:
                     self.id = args[i]
-                elif i ==1:
+                elif i == 1:
                     self.width = args[i]
-                elif i ==2:
+                elif i == 2:
                     self.height = args[i]
                 elif i == 3:
                     self.x = args[i]
                 elif i == 4:
                     self.y = args[i]
-                      
 
     def to_dictionary(self):
         """
