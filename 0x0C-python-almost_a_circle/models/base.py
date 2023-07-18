@@ -129,10 +129,10 @@ class Base():
         """
         try:
             with open("{}.json".format(cls.__name__), 'r', encoding="utf-8")\
-                as file:
+                    as file:
                 json_file = file.read()
-                return [cls.create(**item) for item in\
-                    Base.from_json_string(json_file)]
+                return [cls.create(**item) for item in
+                        Base.from_json_string(json_file)]
         except FileNotFoundError:
             return []
 
@@ -154,7 +154,7 @@ class Base():
     def load_from_file_csv(cls):
         try:
             with open("{}.csv".format(cls.__name__), "r", newline="")\
-                as csvfile:
+                    as csvfile:
                 if cls.__name__ == "Rectangle":
                     fieldnames = ['id', 'width', 'height', 'x', 'y']
                 else:
