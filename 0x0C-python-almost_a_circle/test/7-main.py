@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """ Doc """
+from models.rectangle import Rectangle
 import sys
 import os
 
 # Append the path to the models directory
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
-from models.rectangle import Rectangle
 
 if __name__ == "__main__":
 
