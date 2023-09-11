@@ -5,10 +5,10 @@
  */
 
 exports.callMeMoby = function (x, theFunction) {
-	let n = parseInt(x);
-	if (!isNaN(n)) {
-		for (let i = 0; i < n; i++) {
-			theFunction();
-		}
-	}
-}
+  const n = parseInt(x);
+  if (!isNaN(n)) {
+    for (let i = 0; i < n; i++) {
+      theFunction();
+    }
+  }
+};
