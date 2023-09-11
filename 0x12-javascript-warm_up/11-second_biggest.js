@@ -9,11 +9,14 @@ else {
   let largest = -Infinity;
   let secondLargest = -Infinity;
   for (let i = 0; i < args.length; i++) {
-    if (args[i] > largest) {
+    if (parseInt(args[i]) > largest) {
       secondLargest = largest;
-      largest = args[i];
-    } else if (args[i] > secondLargest && args[i] < largest) {
-      secondLargest = args[i];
+      largest = parseInt(args[i]);
+    } else if (
+      parseInt(args[i]) > secondLargest &&
+      parseInt(args[i]) < largest
+    ) {
+      secondLargest = parseInt(args[i]);
     }
   }
   console.log(secondLargest);
