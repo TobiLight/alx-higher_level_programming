@@ -7,6 +7,22 @@
 
 const fs = require('fs');
 const args = process.argv.slice(2);
-const fileA = fs.readFileSync(args[0], 'utf-8');
-const fileB = fs.readFileSync(args[1], 'utf-8');
-fs.writeFileSync(args[2], fileA + '\n' + fileB + '\n');
+const fileA = args[0];
+const fileB = args[1];
+const fileC = args[2];
+
+if (
+  fs.existsSync(fileA) &&
+  fs.statSync(fileA).isFile &&
+  fs.existsSync(fileB) &&
+  fs.statSync(fileB).isFile &&
+  fileC !== undefined
+) {
+  const fileAContent = fs.readFileSync(fileA);
+  const fileBContent = fs.readFileSync(fileB);
+  const fileCstream = fs.createWriteStream(fileC);
+
+  fileCstream.write(fileAContent + '\n');
+  fileCstream.write(fileBContent + '\n');
+  fileCstream.end();
+}
