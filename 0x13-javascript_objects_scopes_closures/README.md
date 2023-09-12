@@ -1,0 +1,2 @@
+# 0x13. JavaScript - Objects, Scopes and Closures
+This repository contains exercises and examples related to the topic of JavaScript Objects, Scopes, and Closures. These concepts are fundamental to understanding how JavaScript works and how to write efficient and maintainable code.
