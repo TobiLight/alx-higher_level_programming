@@ -16,5 +16,4 @@ for (const userId in dict) {
     newDict[occurrenceCount] = [userId];
   }
 }
-
 console.log(newDict);
