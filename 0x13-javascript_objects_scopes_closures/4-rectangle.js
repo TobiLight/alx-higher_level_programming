@@ -34,10 +34,10 @@ class Rectangle {
 
   double () {
     // Multiples the width and the height of the rectangle by 2
-    const double_width = this.width * 2;
-    const double_height = this.height * 2;
-    this.width = double_width;
-    this.height = double_height;
+    const dobuleWidth = this.width * 2;
+    const doubleHeight = this.height * 2;
+    this.width = dobuleWidth;
+    this.height = doubleHeight;
   }
 }
 
