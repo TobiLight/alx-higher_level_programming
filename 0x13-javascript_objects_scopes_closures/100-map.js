@@ -6,8 +6,5 @@
  */
 
 const initialList = require('./100-data').list;
-const newList = initialList.map((item, idx) => {
-  return idx * item;
-});
 console.log(initialList);
-console.log(newList);
+console.log(initialList.map((item, idx) => idx * item));
