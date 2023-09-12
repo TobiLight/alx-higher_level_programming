@@ -12,5 +12,4 @@ class Square extends Rectangle {
     this.size = size;
   }
 }
-
 module.exports = Square;
