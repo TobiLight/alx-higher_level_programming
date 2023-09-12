@@ -22,7 +22,7 @@ if (
   const fileBContent = fs.readFileSync(fileB);
   const fileCstream = fs.createWriteStream(fileC);
 
-  fileCstream.write(fileAContent + '\n');
-  fileCstream.write(fileBContent + '\n');
+  fileCstream.write(fileAContent);
+  fileCstream.write(fileBContent);
   fileCstream.end();
 }
