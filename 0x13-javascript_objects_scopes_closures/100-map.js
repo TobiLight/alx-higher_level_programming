@@ -7,4 +7,4 @@
 
 const initialList = require('./100-data').list;
 console.log(initialList);
-console.log(initialList.map((item, idx) => idx * item));
+console.log(initialList.map((item, idx) => item * idx));
