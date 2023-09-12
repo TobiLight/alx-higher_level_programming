@@ -12,8 +12,7 @@ function concatFiles (arg) {
   if (!args.length) return;
   const fileA = fs.readFileSync(args[0], 'utf-8');
   const fileB = fs.readFileSync(args[1], 'utf-8');
-  fs.writeFileSync(args[2], fileA + '\n' + fileB + '\n');
-  fs.writeFileSync(args[2], fileA + '\n' + fileB + '\n');
+  fs.writeFileSync(args[2], fileA + "\n" + fileB + "\n");
 }
 
 concatFiles(args);
