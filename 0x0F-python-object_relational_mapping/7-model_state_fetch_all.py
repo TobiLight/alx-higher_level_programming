@@ -19,6 +19,6 @@ if __name__ == "__main__":
     session_factory = sessionmaker(bind=engine, expire_on_commit=False)
     Session = scoped_session(session_factory)
     q = Session()
-    q = q.query(State)
+    q = q.query(State).all()
     for item in q:
         print("{}: {}".format(item.id, item.name))
