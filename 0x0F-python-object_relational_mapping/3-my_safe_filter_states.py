@@ -23,8 +23,8 @@ if __name__ == "__main__":
     query = "SELECT * FROM states WHERE name LIKE BINARY %(name)s ORDER BY\
         'states.id' ASC"
     db_cursor.execute(
-        "SELECT * FROM states WHERE name LIKE \
+        "SELECT * FROM states WHERE name LIKE\
                     BINARY %(name)s ORDER BY 'states.id' ASC",
-        {'name': sys.argv[4]})
+        ({'name': sys.argv[4]},))
 
     print([print(state) for state in db_cursor.fetchall()])
