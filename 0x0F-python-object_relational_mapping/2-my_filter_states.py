@@ -14,6 +14,6 @@ if __name__ == "__main__":
                          port=3306)
     q = db.cursor()
     q.execute("SELECT * FROM `states`\
-            WHERE `name` = '{}'\
+            WHERE BINARY `name` = '{}'\
                     ORDER BY 'states.id' ASC".format(sys.argv[4]))
     [print(state) for state in q.fetchall()]
