@@ -14,4 +14,5 @@ if __name__ == "__main__":
                          port=3306)
     q = db.cursor()
     q.execute("SELECT * FROM `states` ORDER BY 'states.id' ASC")
+    
     [print(state) for state in q.fetchall()]
