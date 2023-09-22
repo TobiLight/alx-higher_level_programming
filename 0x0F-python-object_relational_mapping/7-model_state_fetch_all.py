@@ -4,7 +4,6 @@
 """
 Lists all State objects from the database hbtn_0e_6_usa.
 """
-import MySQLdb
 import sys
 from model_state import Base, State
 from sqlalchemy import create_engine
