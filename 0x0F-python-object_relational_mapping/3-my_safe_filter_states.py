@@ -20,9 +20,11 @@ if __name__ == "__main__":
                             db=sys.argv[3])
 
     db_cursor = db_connect.cursor()
+    query = "SELECT * FROM states WHERE name LIKE BINARY %(name)s ORDER BY\
+        'states.id' ASC"
     db_cursor.execute(
         "SELECT * FROM states WHERE name LIKE \
-                    BINARY %(name)s ORDER BY states.id ASC",
+                    BINARY %(name)s ORDER BY 'states.id' ASC",
         {'name': sys.argv[4]})
 
     print([print(state) for state in db_cursor.fetchall()])
