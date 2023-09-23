@@ -19,7 +19,7 @@ if __name__ == "__main__":
     session_factory = sessionmaker(bind=engine, expire_on_commit=False)
     Session = scoped_session(session_factory)
     q = Session()
-    state = State(name="Lousiana")
+    state = State(name="Louisiana")
     q.add(state)
     q.commit()
     print(state.id)
