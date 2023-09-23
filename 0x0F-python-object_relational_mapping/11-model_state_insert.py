@@ -22,5 +22,4 @@ if __name__ == "__main__":
     state = State(name="Lousiana")
     q.add(state)
     q.commit()
-    for item in q:
-        print("{}".format(item.id))
+    print(state.id)
