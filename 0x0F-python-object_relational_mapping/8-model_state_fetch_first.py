@@ -11,7 +11,8 @@ from sqlalchemy.orm import scoped_session
 
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:{}/{}'
-                           .format(sys.argv[1], sys.argv[2], 3306, sys.argv[3]),
+                           .format(sys.argv[1], sys.argv[2],
+                                   3306, sys.argv[3]),
                            pool_pre_ping=True)
     Base.metadata.create_all(bind=engine)
     session_factory = sessionmaker(bind=engine, expire_on_commit=False)
