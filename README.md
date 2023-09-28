@@ -18,5 +18,7 @@ This project introduces beginner concepts to Python.
 * **[0x0C-python-almost_a_circle](./0x0C-python-almost_a_circle)** - Almost a circle
 * **[0x0D-sql_introduction](./0x0D-SQL_introduction)** - SQL Introduction
 * **[0x0E-SQL_more_queries](./0x0E-SQL_more_queries)** - More SQL Queries
+* **[0x0F-python-object_relational_mapping](./0x0F-python-object_relational_mapping/)** - Python = Object relational mapping
 * **[0x12-javascript-warm_up](./0x12-javascript-warm_up/)** - JavaScript - Warm Up
 * **[0x13-javascript_objects_scopes_closures](./0x13-javascript_objects_scopes_closures)** - JavaScript - Objects, Scopes and Closures
+* **[0x]
