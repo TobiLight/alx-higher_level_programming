@@ -2,7 +2,6 @@
 # File: 0-hbtn_status.py
 # Author: Oluwatobiloba Light
 """Script that fetches https://alx-intranet.hbtn.io/status"""
-
 import urllib.request
 
 

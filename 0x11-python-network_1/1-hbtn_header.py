@@ -10,7 +10,8 @@ import sys
 
 
 if __name__ == "__main__":
-    req = urllib.request.Request('{}'.format(sys.argv[1]))
-    with urllib.request.urlopen(req) as response:
-        if 'X-Request-Id' in response.headers:
-            
+    if len(sys.argv) > 1:
+        req = urllib.request.Request('{}'.format(sys.argv[1]))
+        with urllib.request.urlopen(req) as response:
+            if 'X-Request-Id' in response.headers:
+                print("{}".format(response.headers['X-Request-Id']))
