@@ -13,6 +13,8 @@ This project introduces beginner concepts to Python.
   - Test-Driven Development
 * **[0x08-python-more_classes](./0x08-python-more_classes/)** - Python - More Classes
 * **[0x09-python-everything_is_object](./0x09-python-everything_is_object/)** - Python - Everythng is an Object
+* **[0x10-python-network_0](./0x10-python-network_0/)** - Python - Network #0
+* **[0x11-python-network_1](./0x11-python-network_1/)** - Python - Network #1
 * **[0x0A-python_inheritance](./0x0A-python_inheritance)** -Inheritance
 * **[0x0B-python-input_output](./0x0B-python-input_output/)** - Input/Output
 * **[0x0C-python-almost_a_circle](./0x0C-python-almost_a_circle)** - Almost a circle
