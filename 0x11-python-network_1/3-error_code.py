@@ -14,6 +14,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         req = Request('{}'.format(sys.argv[1]))
         try:
-            response = urlopen(req)
+            with urlopen(req) as response:
+                print("{}".format(response.read().decode('utf-8')))
         except HTTPError as e:
             print("Error code: {}", e.code)
