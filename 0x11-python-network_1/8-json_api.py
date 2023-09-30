@@ -12,7 +12,7 @@ import sys
 if __name__ == "__main__":
     letter = "" if len(sys.argv) == 1 else sys.argv[1]
     url = "http://0.0.0.0:5000/search_user"
-    response = requests.post(url, params={"q": letter}).json()
+    response = requests.post(url, data={"q": letter}).json()
     try:
         if response == {}:
             print("No result")
