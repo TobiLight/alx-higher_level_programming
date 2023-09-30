@@ -5,16 +5,16 @@
 Sends a request to the URL and displays the body of the response
 (decoded in utf-8).
 """
-from urllib.request import urlopen, Request
-from urllib.error import HTTPError
+import urllib.request
+import urllib.error
 import sys
 
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        req = Request('{}'.format(sys.argv[1]))
+        req = urllib.request.Request('{}'.format(sys.argv[1]))
         try:
-            with urlopen(req) as response:
+            with urllib.request.urlopen(req) as response:
                 print("{}".format(response.read().decode('ascii')))
-        except HTTPError as e:
+        except urllib.error.HTTPError as e:
             print("Error code: {}", e.code)
