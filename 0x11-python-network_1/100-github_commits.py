@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-#File: 100-github_commits.py
-#Author: Oluwatobiloba Light
+# File: 100-github_commits.py
+# Author: Oluwatobiloba Light
 """
 Lists the 10 most recent commits on a given GitHub repository.
 """
