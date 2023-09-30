@@ -14,7 +14,6 @@ if __name__ == "__main__":
     url = "http://0.0.0.0:5000/search_user"
     response = requests.post(url, params={"q": letter}).json()
     try:
-        resp
         if response == {}:
             print("No result")
         else:
