@@ -10,14 +10,14 @@ import sys
 
 
 if __name__ == "__main__":
-
-    if len(sys.argv) > 1:
-        response = requests.get("http://0.0.0.0:5000/search_user",
-                                params=sys.argv[1])
-        if 'application/json' in response.headers['Content-Type']:
-            print("[{}] {}".format(response.json()
-                  ['id'], response.json()['name']))
-    else:
-        response = requests.get("http://0.0.0.0:5000/search_user", params="")
-        if 'application/json' in response.headers['Content-Type']:
-            print(response.json())
+    letter = "" if len(sys.argv) == 1 else sys.argv[1]
+    url = "http://0.0.0.0:5000/search_user"
+    response = request.post(url, params={"q": letter}).json()
+    try:
+        resp
+        if response == {}:
+            print("No result")
+        else:
+            print("[{}] {}".format(response.get("id"), response.get("name")))
+    except ValueError:
+        print("Not a valid JSON")
