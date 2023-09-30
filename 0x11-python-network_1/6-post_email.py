@@ -11,6 +11,5 @@ import sys
 
 if __name__ == "__main__":
     if len(sys.argv) > 2:
-        val = {"email: {}".format(sys.argv[2])}
-        response = requests.post(sys.argv[1], data=val)
+        response = requests.post(sys.argv[1], data={"email": sys.argv[2]})
         print(response.text)
