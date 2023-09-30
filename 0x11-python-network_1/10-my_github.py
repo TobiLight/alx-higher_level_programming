@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-#File: 10-my_github.py
-#Author: Oluwatobiloba Light
+# File: 10-my_github.py
+# Author: Oluwatobiloba Light
 """
 Uses the GitHub API to display your id.
 """
