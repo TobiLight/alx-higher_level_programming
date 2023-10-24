@@ -8,5 +8,5 @@ const req = require('request');
 
 req(process.argv[2], (err, data) => {
   if (err) console.log(err);
-  console.log(data.statusCode);
+  console.log("code:", data.statusCode);
 });
