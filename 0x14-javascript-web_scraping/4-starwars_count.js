@@ -6,7 +6,7 @@
  */
 const req = require('request');
 
-req(url, (err, res, body) => {
+req(process.argv[2], (err, res, body) => {
   if (err) console.log(err);
   const movies_count = body.split('/people/18/').length - 1;
   console.log(movies_count);
