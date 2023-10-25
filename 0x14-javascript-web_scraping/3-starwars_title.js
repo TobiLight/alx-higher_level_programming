@@ -3,6 +3,7 @@
  * File: 3-starwars_title.js
  * Author: Oluwatobiloba Light
  * Prints the title of a Star Wars movie where the episode number matches
+ * a given integer.
  */
 const req = require('request');
 
