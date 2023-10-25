@@ -7,17 +7,9 @@
 const fs = require('fs');
 const file = process.argv[2];
 
-// try {
-//   const data = fs.readFileSync(file, 'utf-8');
-//   console.log(data);
-// } catch (error) {
-//   console.log(error);
-// }
-
-fs.readFile(file, { encoding: 'utf-8' }, (err, data) => {
-  if (err) {
-    console.log(err);
-    return (err);
-  }
+try {
+  const data = fs.readFileSync(file, 'utf-8');
   console.log(data);
-});
+} catch (error) {
+  console.log(error);
+}
