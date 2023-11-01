@@ -9,6 +9,6 @@ const red_header = $('div#red_header');
 
 if (red_header) {
   red_header.on('click', (event) => {
-    red_header.css('color', '#FF0000');
+    $('header').css('color', '#FF0000');
   });
 }
