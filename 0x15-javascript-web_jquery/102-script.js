@@ -7,11 +7,11 @@
 // ps: you can use window.onload but since we're using jquery, it makes sense
 // to use the below...t for thanks
 $(document).ready(() => {
-  $('#btn_translate').click(function () {
-    const languageCode = $('#language_code').val();
+  $('input#btn_translate').click(function () {
+    const languageCode = $('input#language_code').val();
     const url = 'https://hellosalut.stefanbohacek.dev/';
     $.get(url, { lang: languageCode }, (res) => {
-      $('#hello').text(res.hello);
+      $('div#hello').text(res.hello);
     });
   });
 });
