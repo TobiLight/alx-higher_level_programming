@@ -16,7 +16,6 @@ if (list_movies) {
         const movie_title = $(`<li>${movies[movie].title}</li>`);
         list_movies.append(movie_title);
       }
-      list_movies.text(res.name);
     }
   });
 }
